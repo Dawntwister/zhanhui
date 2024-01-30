@@ -1,39 +1,44 @@
 import React from 'react';
+import { ReactComponent as ReactLogo } from '../assets/react-icon.svg';
+import { ReactComponent as TailwindLogo } from '../assets/tailwindcss.svg';
 
 function Home() {
   return (
-    <div className='flex justify-evenly items-center w-full mt-[6vh]'>
-
+    <div className='mt-[6vh]'>
 
       {/* Banner */}
-      <div className='grid grid-cols-12 w-full justify-items-center bg-slate-500 text-white pt-[30vh] pb-[20vh]'>
+      <section className='grid grid-cols-12 w-full text-white bg-slate-500 pt-[30vh] pb-[20vh] px-[10vh]'>
 
         {/* Welcome section */}
-        <div className='col-span-9 flex flex-col justify-center px-12 leading-loose'>
-          <h1 className='text-6xl font-bold'>Welcome to my tech blog, I'm Zhan Hui :)</h1>
-          <p className='text-2xl'>This is the home page</p>
+        <div className='col-span-9 px-12 leading-12'>
+          <h1 className='text-6xl font-bold mb-4'>Welcome to my tech blog, I'm Zhan Hui :)</h1>
+          <p className='text-2xl leading-normal mt-4'>This is the home page</p>
         </div>
 
         {/* Photo placeholder */}
-        <div className='col-span-3 bg-gray-300 w-36 h-48'>
-          {/* Photo */}
+        <div className='col-span-3 place-items-center'>
+          {/* Insert a rectangle placeholder */}
+          <div className='w-[30vh] h-[30vh] bg-gray-300'></div>
         </div>
-
-      </div>
-
-
+      </section>
+    
 
       {/* About the website */}
-      {/* <div className='grid grid-cols-12 w-full justify-items-center text-slate-500 py-[20vh]'> */}
+      <section className='grid grid-cols-12 w-full text-slate-500 bg-white py-[20vh] px-[10vh]'>
 
         {/* About section */}
-        {/* <div className='flex justify-center px-12 leading-loose'>
-          <h1 className='text-6xl font-bold'>About this website</h1>
-          <p className='text-2xl'>This is the home page</p>
+        <div className='col-span-9 px-12 leading-12'>
+          <h1 className='text-6xl font-bold mb-4'>How is this webpage being built</h1>
+          <p className='text-2xl leading-normal mt-4'>This webpage is built under the React framework with Tailwind CSS as well as GSAP, a JavaScript animation library.</p>
         </div>
-  
-      </div> */}
 
+        <div className='col-span-3 place-items-center'>
+          {/* Insert two svg icons */}
+          <ReactLogo className="w-[15vh] h-[10vh] mx-5 my-3" />
+          <TailwindLogo className="w-[15vh] h-[10vh] mx-5 my-3" />
+        </div>
+
+      </section>
 
     </div>
   );
