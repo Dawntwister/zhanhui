@@ -24,7 +24,7 @@ function Home() {
     
 
       {/* About the website */}
-      <section className='grid grid-cols-12 w-full text-slate-500 bg-white py-[20vh] px-[10vh]'>
+      <section className='grid grid-cols-12 w-full text-slate-500 bg-white pt-[20vh] px-[10vh] pb-[10vh]'>
 
         {/* About section */}
         <div className='col-span-9 px-12 leading-12'>
@@ -34,11 +34,37 @@ function Home() {
 
         <div className='col-span-3 place-items-center'>
           {/* Insert two svg icons */}
-          <ReactLogo className="w-[15vh] h-[10vh] mx-5 my-3" />
-          <TailwindLogo className="w-[15vh] h-[10vh] mx-5 my-3" />
+          <ReactLogo className="w-[30vh] h-[20vh] mx-5 my-3" />
+          <TailwindLogo className="w-[30vh] h-[20vh] mx-5 my-3" />
         </div>
 
       </section>
+
+      {/* Contact me with input form */}
+      <section className='grid grid-cols-12 w-full text-slate-500 bg-white pt-[20vh] px-[10vh] pb-[10vh]'>
+        <div className='col-span-12 '>
+          <h2 className='text-4xl md:text-6xl font-bold mb-8'>Contact Me</h2>
+        </div>
+
+        <div className='col-span-5'>
+          <form>
+            <div className='mb-4'>
+              <label htmlFor='name' className='block text-lg md:text-xl text-slate-500 mb-2'>Name</label>
+              <input type='text' id='name' className='form-input w-full py-3 px-4 rounded border border-slate-300 focus:outline-none focus:border-indigo-500' />
+            </div>
+            <div className='mb-4'>
+              <label htmlFor='email' className='block text-lg md:text-xl text-slate-500 mb-2'>Email</label>
+              <input type='email' id='email' className='form-input w-full py-3 px-4 rounded border border-slate-300 focus:outline-none focus:border-indigo-500' />
+            </div>
+            <div className='mb-8'>
+              <label htmlFor='message' className='block text-lg md:text-xl text-slate-500 mb-2'>Message</label>
+              <textarea id='message' rows='5' className='form-textarea w-full py-3 px-4 rounded border border-slate-300 focus:outline-none focus:border-indigo-500'></textarea>
+            </div>
+            <button type='submit' className='bg-slate-500 text-white py-3 px-6 rounded hover:bg-cyan-500 hover:text-white transition duration-300'>Send Message</button>
+          </form>
+        </div>
+      </section>
+
 
     </div>
   );
