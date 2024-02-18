@@ -4,7 +4,7 @@ import { ReactComponent as TailwindLogo } from '../assets/tailwindcss.svg';
 
 function Home() {
   return (
-    <div className='mt-[6vh]'>
+    <div className='bg-white'>
 
       {/* Banner */}
       <section className='grid grid-cols-12 w-full text-white bg-slate-500 pt-[30vh] pb-[20vh] px-[10vh]'>
@@ -18,7 +18,7 @@ function Home() {
         </div>
 
         {/* Photo placeholder */}
-        <div className='col-span-3 place-items-center'>
+        <div className='col-span-3 px-12 place-items-center'>
           {/* Insert a rectangle placeholder */}
           <div className='w-[30vh] h-[30vh] bg-gray-300'></div>
         </div>
@@ -26,7 +26,7 @@ function Home() {
     
 
       {/* About the website */}
-      <section className='grid grid-cols-12 w-full text-slate-500 bg-white pt-[20vh] px-[10vh] pb-[10vh]'>
+      <section className='grid grid-cols-12 w-full text-slate-500 pt-[20vh] px-[10vh] pb-[10vh]'>
 
         {/* About section */}
         <div className='col-span-9 px-12 leading-12'>
@@ -34,17 +34,17 @@ function Home() {
           <p className='text-2xl leading-normal mt-4'>This webpage is built under the React framework with Tailwind CSS as well as GSAP, a JavaScript animation library.</p>
         </div>
 
-        <div className='col-span-3 flex flex-col items-center justify-start'>
+        <div className='col-span-3 px-12 flex flex-col items-center justify-start'>
           {/* Insert two svg icons */}
-          <ReactLogo className="w-[40vh] h-[15vh]" />
-          <TailwindLogo className="w-[40vh] h-[15vh] mt-[10vh]" />
+          <ReactLogo className="w-[30vh] h-[10vh]" />
+          <TailwindLogo className="w-[30vh] h-[10vh] mt-[10vh]" />
         </div>
 
       </section>
 
       {/* Contact me with input form */}
-      <section className='grid grid-cols-12 w-full text-slate-500 bg-white pt-[20vh] px-[10vh] pb-[10vh]'>
-        <div className='col-span-12 '>
+      <section className='grid grid-cols-12 w-full text-slate-500 pt-[20vh] px-[10vh] pb-[10vh]'>
+        <div className='col-span-12'>
           <h2 className='text-4xl md:text-6xl font-bold mb-8'>Contact Me</h2>
         </div>
 
